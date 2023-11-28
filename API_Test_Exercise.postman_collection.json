@@ -1,0 +1,571 @@
+{
+	"info": {
+		"_postman_id": "ab4171ff-0589-4939-b9dd-91872922b055",
+		"name": "API_Test_Exercise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26887761"
+	},
+	"item": [
+		{
+			"name": "Get All Products List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/productsList",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"productsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post To All Products List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/productsList",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"productsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Brands List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/brandsList",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"brandsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put To All Brands List",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/brandsList",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"brandsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post To Search Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "search_product",
+							"value": "top",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "search_product",
+							"value": "tshirt",
+							"type": "text"
+						},
+						{
+							"key": "search_product",
+							"value": "jean",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/searchProduct",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"searchProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post To Search Product without search_product parameter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/searchProduct",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"searchProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post To Verify Login with valid details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "johndoe@hotmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "P@ssword",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/verifyLogin",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"verifyLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post To Verify Login without email parameter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "password",
+							"value": "P@ssword",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/verifyLogin",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"verifyLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete To Verify Login",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/verifyLogin",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"verifyLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post To Verify Login with invalid details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "billy@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "elephantlover23",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/verifyLogin",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"verifyLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post To Create/Register User Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Billy Bob",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "billybob@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "P@ssw0rd",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_day",
+							"value": "21",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "08",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "Billy",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Bob",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "QAC",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "275 Sheppard Road West, PO Box 1033, QAC, Toronto, ON",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "426 Kennedy Road, M4S 1R5, Toronto, ON",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "Canada",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "M4S 1G5",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "Ontario",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Toronto",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "416-223-4452",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/createAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"createAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Method To Delete User Account",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "billybob@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "P@ssw0rd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/deleteAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"deleteAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Method To Update User Account",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Billy Bob",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "billybob@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "P@ssw0rd",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_day",
+							"value": "21",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "08",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "Billy",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Bob",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "QA Consultants",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "275 Sheppard Road West, PO Box 1033, QAC, Toronto, ON",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "426 Kennedy Road, M4S 1R5, Toronto, ON",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "Canada",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "M4S 1G5",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "Ontario",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Toronto",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "416-223-4452",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/updateAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"updateAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Account Detail By Email",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/getUserDetailByEmail?email=johndoe@hotmail.com",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"getUserDetailByEmail"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "johndoe@hotmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
